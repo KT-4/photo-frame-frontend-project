@@ -1,0 +1,87 @@
+.sidebar-nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 6px 10px;
+    transition: 0.5s;
+    color: gray;
+    border-bottom: 1px solid rgb(0, 0, 0,0.4);
+}
+
+.sidebar-nav ul li a:hover {
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+.sidebar-nav .offcanvas {
+    width: 240px;
+    border: none;
+}
+
+.sidebar-nav .offcanvas ul li a span {
+    font-size: 18px;
+    position: relative;
+    top: -4px;
+    transition: 0.5s;
+
+}
+
+.sidebar-nav .offcanvas.show ul li a:hover span {
+    padding-left: 10px;
+}
+
+.sidebar-nav .dropdown-toggle::after {
+    position: relative;
+    top: 3px;
+}  
+.custom-toggler{
+    background-color: white;
+    border: none;
+  }
+.custom-toggler span{
+    font-size: 13px;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #666666;
+}
+.custom-toggler i {
+    line-height: 1.2;
+    font-size: 21px;
+    vertical-align: middle;
+    color: #666666;
+  } 
+
+  .navbar .textnone i{
+    color: #1c1f23;
+    font-size: 27px;
+    padding: 7px;
+  } 
+
+  /* card icon css */
+
+
+  #ex4 .p1[data-count]:after{
+    position:absolute;
+    right:17%;
+    top:8%;
+    content: attr(data-count);
+    font-size:60%;
+    padding:.2em;
+    border-radius:50%;
+    line-height:1em;
+    color: white;
+    background:rgba(255,0,0,.85);
+    text-align:center;
+    min-width: 1em;
+  }
+  #ex4 .p1{
+    font-size: 23px;
+    vertical-align: middle;
+    color:black;
+  }
+
+  #ex4 a{
+    text-decoration: none;
+    color: #fcb900;
+  }
+

@@ -1,0 +1,104 @@
+/*---- slider header css start -----*/
+
+
+.section-content{
+    position: relative;
+    margin-top: 80px
+}
+.section-title-container {
+ margin-bottom: 1.5em;
+ }
+ .section-title {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+ }
+ .section-title b {
+     display: block;
+     flex: 1;
+     height: 2px;
+     opacity: 0.1;
+     background-color: black;
+ }
+
+ .section-title-center span, .section-title-bold-center span {
+     text-align: center;
+     font-size: 20px;
+     margin: 0 auto;
+     font-weight: 700;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .section-title-center span {
+     margin: 0 15px;
+ }
+ .section-title span {
+     text-transform: uppercase;
+ }
+
+/*----- slider header css end ------*/
+
+
+/*----- owl slider css start -----*/
+.post-container{
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.post-container .post{
+    width:300px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(220,220,220,3);
+    margin: 12px auto;
+    /* padding-bottom: 20px; */
+}
+
+.post-container .post .image img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.post-container .post .content{
+    padding: 10px 20px;
+}
+
+.post-container .post .content .title{
+    padding:5px 0;
+    text-align: center; 
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.post-container .post .content .title a{
+    display: block;
+    text-decoration: none;
+    color: #0F0F11;
+    
+}
+.post-container .post .content .price{
+    font-weight: 800;
+    text-align: center;
+    font-size: 18px;
+    color: #0F0F11;
+    text-transform: capitalize;
+}
+.post-container .post .content .price span{
+    color: white;
+    background-color: rgb(34, 33, 33);
+    border: 1px solid black;
+    font-weight: normal;
+    padding: 7px;
+    border-radius: 100%;
+}
+.post-container .post .content:hover .title a{
+    text-decoration: underline;
+}
+
+.template{
+    padding-bottom: 20px;
+
+}
+
+
+/*----- owl slider css end -----*/

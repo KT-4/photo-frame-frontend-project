@@ -1,0 +1,54 @@
+<div class="container">
+
+<!-- Slider header start -->
+<div class="row">
+    <div class="col-md-12 col-12">
+        <div class="section-content">
+            <div class="container section-title-container">
+                <h3 class="section-title section-title-center">
+                    <b></b>
+                    <span class="section-title-main">Customized Acrylic Dsigns</span>
+                    <b></b>
+                </h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- slider title end -->
+
+<!-- Owl-Carousel Slider  start-->
+
+    <div class="row p-1">
+        <div class="col-md-12 col-12">
+            <div class="post-container">
+
+                <owl-carousel-o [options]="customOptions">
+    
+                    <ng-container *ngFor="let slide of slides">
+                    <ng-template carouselSlide [id:string]="slide.id">
+                        
+                        <div class="post">  
+                                <div class="image">
+                                    <img [src]="slide.img" alt="slider-image">
+                                </div>
+                                <div class="content">
+                                    <p class="title"><a href="">{{slide.title}}</a></p>
+                                    <p class="price">{{ slide.price | currency :'INR':'symbol-narrow':'4.0-0'}}<span class="mx-2 .text-success">{{slide.discount}}%</span></p>
+                                </div>
+                        </div>
+
+                    </ng-template>
+                    </ng-container>
+                    
+                    </owl-carousel-o>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+         <!-- Owl-Carousel Slider end -->

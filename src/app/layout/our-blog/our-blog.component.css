@@ -1,0 +1,77 @@
+/* Header section Starty */
+/*************************/
+
+.section-content{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+.section-title-container {
+    margin-bottom: 1.5em;
+ }
+ .section-title {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+ }
+ .section-title b {
+     display: block;
+     flex: 1;
+     height: 2px;
+     opacity: 0.1;
+     background-color: black;
+ }
+
+ .section-title-center span, .section-title-bold-center span {
+     text-align: center;
+     font-size: 20px;
+     margin: 0 auto;
+     font-weight: 700;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .section-title-center span {
+     margin: 0 15px;
+ }
+ .section-title span {
+     text-transform: uppercase;
+ }
+
+/* header section end */
+/**********************/
+.card{
+    box-shadow: 0 5px 20px 7px rgba(0, 0, 0,0.1);
+    margin: 10px;
+}
+.card img{
+    transform:  scaleX(0.5);
+}
+.is-divider {
+    height: 3px;
+    display: block;
+    background-color: rgba(0,0,0,.1);
+    margin: 1em 0 1em;
+    width: 100%;
+    max-width: 30px;
+}
+.card .is-divider {
+    margin: 8px auto;
+    height: 2px;
+}
+.card .teg-p{
+    display: inline-block;
+    margin-bottom: 2px;
+    font-size: .6em;
+    color: white;
+    font-weight: bold;
+    border: 1px solid grey;
+    padding: 0% 5px;
+    border-radius: 5px;
+    background-color: grey;
+}
+.card:hover .teg-p{
+    background-color: #ff6900;
+    border: 1px solid #ff6900;
+}

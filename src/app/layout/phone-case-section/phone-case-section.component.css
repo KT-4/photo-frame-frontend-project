@@ -1,0 +1,94 @@
+/*---- phone cass sections headers start -----*/
+.wrapper{
+    background-color: #f0eeee;
+    padding: 1px;
+    padding-bottom: 90px;
+}
+.section-content{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+.section-title-container {
+    margin-bottom: 1.5em;
+ }
+ .section-title {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+ }
+ .section-title b {
+     display: block;
+     flex: 1;
+     height: 2px;
+     opacity: 0.1;
+     background-color: black;
+ }
+
+ .section-title-center span, .section-title-bold-center span {
+     text-align: center;
+     font-size: 20px;
+     margin: 0 auto;
+     font-weight: 700;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .section-title-center span {
+     margin: 0 15px;
+ }
+ .section-title span {
+     text-transform: uppercase;
+ }
+
+/*----- phone cass sections headers end ------*/
+
+/*---- Search Bar CSS  Start -----*/
+.input-group{
+    margin: 0px;
+}
+.input-group input{
+    border-radius: 0px;
+    vertical-align: middle;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0,.3) inset;
+
+}
+.input-group input:hover{
+    border-radius: 0px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0,.3);
+}
+.input-group input:focus{
+    border-radius: 0px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0,.3);
+}
+.input-group span{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+/*----- Search  Bar CSS  End-----*/
+
+
+/*----- button Bar CSS Start-----*/
+.button-set{
+    padding: 0px 15px 30px;
+}
+.btn{
+    width: 170px;
+    border-radius: 30px;
+}
+
+@media (max-width: 575.98px) { 
+    .btn{
+        width: 100%;
+    } 
+ }
+ @media (max-width: 767.98px) { 
+    .btn{
+        width: 100%;
+    } 
+  }
+/*----- button Bar CSS End-----*/

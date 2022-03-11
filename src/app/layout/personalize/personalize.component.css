@@ -1,0 +1,138 @@
+/*---- phone cass sections headers start -----*/
+/**********************************************/
+.wrapper{
+    background-color: #f0eeee;
+    padding: 1px;
+    padding-bottom: 90px;
+}
+.section-content{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+.section-title-container {
+    margin-bottom: 1.5em;
+ }
+ .section-title {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+ }
+ .section-title b {
+     display: block;
+     flex: 1;
+     height: 2px;
+     opacity: 0.1;
+     background-color: black;
+ }
+
+ .section-title-center span, .section-title-bold-center span {
+     text-align: center;
+     font-size: 20px;
+     margin: 0 auto;
+     font-weight: 700;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ .section-title-center span {
+     margin: 0 15px;
+ }
+ .section-title span {
+     text-transform: uppercase;
+ }
+
+/*----- phone cass sections headers end ------*/
+
+
+
+.top-p{
+    font-weight: 400; 
+    text-align: center; 
+    font-size: 1.1rem; 
+    overflow-wrap: break-word
+ }
+ 
+/* Section - Parallax */
+/***********************/
+#parallax-world-of-ugg .parallax-one {
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%;
+    min-height: 395px;
+    transform: 0px, -106.63px, 0px; 
+    background: linear-gradient(rgba(53, 3, 9, 0.8), rgba(126, 52, 52, 0.8)), url(https://s.omgs.in/wp-content/uploads/2021/09/3oil-paint-photo-poster-acrylic-poster-.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover !important;
+    opacity: 1;
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat !important; 
+    background-position: 50% 50%;
+}
+
+.parallax-one h2{
+    color: white;
+    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.parallax-one p{
+    color: white;
+    font-size: 19px;
+    font-weight: 600px;
+    line-height: 1.6;
+}
+
+
+
+/* Accordion Css Start */
+/*********************/
+.accordion{
+    margin-bottom: 20px;
+}
+
+.accordion-item h2 button{
+    color: black;
+    font-size: 18px;
+}
+
+.accordion-body{
+    font-weight: 400px;
+    font-size: 17px   ;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black  !important;
+    background-color: rgba(0,0,0,.03) !important;
+    font-size: 18px;
+    font-weight: bold;  
+    border-top: 2px solid black;
+} 
+  
+.accordion-button:link, .accordion-button:active  {
+      
+    background-color:rgba(0,0,0,.03) !important;
+    color: black !important;
+    text-decoration: none !important;
+    border: hidden !important;
+    border-color: black !important;
+    box-shadow: 0px !important;
+    font-size: 18px;
+    border-top: 2px solid black;
+    font-weight: bold;    
+} 
+.accordion-button:hover{
+    font-size: 18px;
+    font-weight: 600;
+}
+  
+.accordion-button:focus {
+    box-shadow: none;
+    font-size: 18px;
+}
+/* Accordion Css End */
+/*********************/
