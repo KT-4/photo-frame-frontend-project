@@ -1,0 +1,45 @@
+<div class="wrapper">
+    <div class="container">
+
+
+         <!-- Case search header start -->
+    <div class="row" style="padding-top: 30px;">
+        <div class="col-md-12 col-12">
+            <div class="section-content">
+                <div class="container section-title-container">
+                    <h3 class="section-title section-title-center">
+                        <b></b>
+                        <span class="section-title-main">FIND YOUR PHONE CASE</span>
+                        <b></b>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Case search header end -->
+
+        <div class="row">
+
+            
+
+                <div class="col-md-4 col-sm-12" *ngFor="let post of posts" >
+                    <div class="card mx-30 text-center">
+                        <a [href]="post.link">
+                        <img [src]="post.img" height="225px" width="300px" class="card-img-top" alt=""></a>
+                        <div class="card-body">
+                            <p class="teg-p"> BLOG </p>
+                            <h5 class="card-title">
+                                {{post.title}}
+                            </h5>
+                            <div class="is-divider"></div>
+                            <p>{{post.dis}}</p>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+

@@ -41,6 +41,10 @@
 
 /* header section end */
 /**********************/
+.center{
+    min-width: 300px;
+    margin: o auto;
+}
 .card{
     box-shadow: 0 5px 20px 7px rgba(0, 0, 0,0.1);
     margin: 10px;

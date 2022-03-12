@@ -45,8 +45,6 @@
 
 /*----- phone cass sections headers end ------*/
 
-
-
 .top-p{
     font-weight: 400; 
     text-align: center; 
@@ -56,6 +54,7 @@
  
 /* Section - Parallax */
 /***********************/
+
 #parallax-world-of-ugg .parallax-one {
     padding-top: 30px;
     padding-bottom: 30px; 

@@ -90,18 +90,32 @@
                     <!-- Accordion -->
                     <div class="accordion accordion-flush" id="accordionFlushExample">
 
-                        <!-- Accordion item 1 -->
+                      <!-- Accordion item 1 Not doing *ngFor-->
+                      <div style="border-bottom:1px solid #ddd"></div>
+                      <div class="accordion-item" *ngFor="let qna of questions">
+                        <h2 class="accordion-header" [id]="qna.idOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#flush-collapse'+qna.number" aria-expanded="false" [attr.aria-controls]="'qna.controls'+qna.controls">
+                            {{qna.title}}
+                          </button>
+                        </h2>
+                        <div [id]="qna.idSecond" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">{{qna.answ}}</div>
+                        </div>
+                      </div>
+<!-- 
+                         Accordion item 1 
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne " style="border-top:1px solid #ddd">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h2 class="accordion-header" id="flush-heading0 " style="border-top:1px solid #ddd">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse0" aria-expanded="false" aria-controls="flush-collapse0">
                                 How much does delivery cost?
                               </button>
                             </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div id="flush-collapse0" class="accordion-collapse collapse" aria-labelledby="flush-heading0" data-bs-parent="#accordionFlushExample">
                               <div class="accordion-body">There is no minimum amount required to avail of free shipping on your order. We offer free shipping on all orders made through our website.</div>
                             </div>
                           </div>
-                          <!-- Accordion item 2 -->
+                          
+                          Accordion item 2 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingTwo">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -112,7 +126,8 @@
                               <div class="accordion-body">Yes. you have the option to get your order gift wrapped if you are buying it for someone else. There is a 50 rupees extra charge for gift wrapping.</div>
                             </div>
                           </div>
-                          <!-- Accordion item  -->
+
+                           Accordion item  
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingThree">
                               <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -123,7 +138,8 @@
                               <div class="accordion-body">We source from the best producers to provide you with premium quality prints. Our partners are one of the best in the country.</div>
                             </div>
                           </div>
-                          <!-- Accordion item 4 -->
+
+                          Accordion item 4 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingFour">
                               <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
@@ -134,7 +150,8 @@
                               <div class="accordion-body">Acrylic photo prints come with a gloss finish that looks exactly like q glass. However, acrylic is scratch-resistant and does not break like glass.</div>
                             </div>
                           </div>
-                          <!-- Accordion item 5 -->
+
+                           Accordion item 5 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingFive">
                               <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
@@ -145,7 +162,8 @@
                               <div class="accordion-body">You can upload your images in jpeg, jpg, or png formats. Make sure they are of high resolution as the prints might get blurred with low-quality pictures.</div>
                             </div>
                           </div>
-                          <!-- Accordion item 6  -->
+
+                         Accordion item 6  
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingSix">
                               <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
@@ -156,7 +174,8 @@
                               <div class="accordion-body">You can select custom font, text, background, and color for your phone covers. Our preview tool will show you how your finished product will look like and we will deliver exactly what you see on the screen.</div>
                             </div>
                           </div>
-                          <!-- Accordion item 7 -->
+
+                          Accordion item 7 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingSeven">
                               <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
@@ -167,7 +186,8 @@
                               <div class="accordion-body">Yes. we have shockproof covers available on our site for all the latest models of smartphones.</div>
                             </div>
                           </div>
-                          <!-- Accordion item 8 -->
+
+                           Accordion item 8 
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingEight">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
@@ -178,7 +198,7 @@
                               <div class="accordion-body">We offer all modes of online payment such as credit card, debit card, net banking, phone pe,  G pay, UPI, Paytm via Razorpay.</div>
                             </div>
                           </div>
-                          
+                           -->
 
                     </div>
                 </div>

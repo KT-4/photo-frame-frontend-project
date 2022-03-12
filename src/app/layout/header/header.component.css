@@ -85,3 +85,17 @@
     color: #fcb900;
   }
 
+
+/* Bootstrap Login & Register Model Css */
+/****************************************/
+
+.vl {
+  border-left: 1px solid black;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.modal-dialog {
+  width: 760px;
+
+}
