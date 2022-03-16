@@ -1,0 +1,76 @@
+.headTitle{
+    padding: 10px;
+    font-weight: 600;
+}
+.wallbg {
+    background: url(https://s.omgs.in/wp-content/uploads/2021/02/wall-c.jpg);
+    padding: 20px;
+    background-size: cover;
+    margin-left: -35px;
+    margin-right: -35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 338px;
+    position: relative;
+}
+
+/* Slider Range Button CSS Start */
+/********************************/
+
+.slidecontainer {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 350px;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    background: #0587f6;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+  .range_label{
+      width: 25px;
+      height: 25px;
+      margin: 0;
+      font-size: 20px;
+      position: relative;
+      top: -9px;  
+  }
+  #zoom_text{
+      font-size: 11px;
+      text-align: center;
+      font-weight: 300px;
+  }
+
+  /* Slider Range Button CSS End */
+/*********************************/
