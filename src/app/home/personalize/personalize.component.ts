@@ -20,7 +20,7 @@ export class PersonalizeComponent implements OnInit {
     {idOne:"flush-heading4", number:"4", controls:"4", idSecond:"flush-collapse4", title:"What finish does your acrylic product have?", answ:"Acrylic photo prints come with a gloss finish that looks exactly like q glass. However, acrylic is scratch-resistant and does not break like glass."},
     {idOne:"flush-heading5", number:"5", controls:"5", idSecond:"flush-collapse5", title:"What file formats can I upload?", answ:"You can upload your images in jpeg, jpg, or png formats. Make sure they are of high resolution as the prints might get blurred with low-quality pictures."},
     {idOne:"flush-heading6", number:"6", controls:"6", idSecond:"flush-collapse6", title:"How can I customize my phone cover?", answ:"You can select custom font, text, background, and color for your phone covers. Our preview tool will show you how your finished product will look like and we will deliver exactly what you see on the screen."},
-    {idOne:"flush-heading7", number:"7", controls:"7", idSecond:"flush-collapse7", title:"Yes. we have shockproof covers available on our site for all the latest models of smartphones."},
+    {idOne:"flush-heading7", number:"7", controls:"7", idSecond:"flush-collapse7", title:"Are your phone covers shockproof?",answ:"Yes. we have shockproof covers available on our site for all the latest models of smartphones."},
   ]
 
 }
