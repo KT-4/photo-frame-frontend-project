@@ -20,7 +20,7 @@
 .slidecontainer {
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 20px;
     max-width: 350px;
   }
   
@@ -74,3 +74,94 @@
 
   /* Slider Range Button CSS End */
 /*********************************/
+
+
+
+/*image edit saction css*/
+/************************/
+.imgPanel{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;  
+}
+.imgPanel li {
+  list-style: none;
+  float: left;
+  margin-left: 0 !important;
+  width: 33.33%;
+  height: 60px;
+  border: 1px solid #eee;
+  vertical-align: middle;
+  cursor: pointer;
+  
+}
+.imgPanel li:hover{
+  background-color: #eeeeee;
+}
+
+/*image edit saction css*/
+/************************/
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ea8b00;
+  background-color: #ea8b00;
+  border-radius: 5px;
+  display:block;
+  margin: 10px 8px;
+  padding: 9px 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+
+
+
+/* start Image resizeing css */
+/************************/
+
+table.variations {
+  max-width: 480px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.variations .size {
+  vertical-align: middle;
+  padding: 0.2em 1em;
+  border: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.radio-toolbar input[type="radio"] {
+  /* display: none; */
+  opacity: 0;
+  position: fixed;
+  width: 0;
+  
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  border: 1px solid #b7b3b3;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.radio-toolbar input[type="radio"]:checked  + label{
+  background-color: black !important;
+  font-weight: bold !important;
+  color: white !important;
+  border: 2px solid black !important;
+}
+
+
+/* End image resize css */
+/**********************/
