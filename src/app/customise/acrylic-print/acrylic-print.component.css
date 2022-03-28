@@ -1,0 +1,31 @@
+.card{
+    border-radius: 0%;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden; 
+}
+
+.card img{
+ height: 350px;
+ transition: 1.3s ease-in-out !important;
+}
+
+.card-body{
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+
+.card-title {
+text-transform: capitalize;
+font-weight: bold;
+font-size: 16px;
+}
+
+@media (max-width: 800px){
+    .mx-30{
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}

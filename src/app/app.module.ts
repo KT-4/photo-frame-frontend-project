@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
 import { FormsModule } from '@angular/forms';
-import { HomeModule } from './home/home.module';
 
 
 
@@ -20,7 +19,6 @@ import { HomeModule } from './home/home.module';
     BrowserModule,
     AppRoutingModule,
     LayoutModule,
-    HomeModule,
     FormsModule
    
   ],

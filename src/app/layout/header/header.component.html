@@ -13,21 +13,21 @@
         </strong></a>
 
       <!-- Menus List -->
-      <div class="bg-light offcanvas offcanvas-start shadow" tabindex="-1" id="offcanvasNavbar"
+      <div class="bg-light offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-body">
           <ul class="navbar-nav">
-            <li><a href="#"> <span class="item-text">Home</span></a></li>
-            <li><a routerLink="/product/wall-photo"><span class="item-text">Custom Acrylic Photo</span></a></li>
-            <li><a href="#"><span class="item-text">Custom Phone Cases</span></a></li>
-            <li><a href="#"> <span class="item-text">Designer acrylic</span></a></li>
+            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']" > <span class="item-text"> <i class="fa-solid fa-house"></i> Home</span></a></li>
+            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/product/wall-photo']" ><span class="item-text">Custom Acrylic Photo</span></a></li>
+            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Custom Phone Cases</span></a></li>
+            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/customise/acrylic-print']"> <span class="item-text">Designer acrylic</span></a></li>
             <!-- <li>
               <hr class="dropdown-divider">
             </li> -->
-            <li><a href="#"><span class="item-text">Acrylic Name plate</span></a></li>
-            <li><a href="#"><span class="item-text">Track Your Order</span></a></li>
-            <li><a href="#"><span class="item-text">Blog</span></a></li>
-            <li><a href="#"><span class="item-text">Contect Us</span></a></li>
+            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Acrylic Name plate</span></a></li>
+            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Track Your Order</span></a></li>
+            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Blog</span></a></li>
+            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Contect Us</span></a></li>
           </ul>
         </div>
       </div>

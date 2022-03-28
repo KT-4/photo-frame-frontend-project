@@ -1,3 +1,6 @@
+.sidebar-nav{
+  border-bottom:1px solid rgb(238,238,238);
+}
 .sidebar-nav ul li a {
     font-size: 18px;
     text-decoration: none;
@@ -26,7 +29,7 @@
 
 }
 
-.sidebar-nav .offcanvas.show ul li a:hover span {
+.sidebar-nav .offcanvas ul li a:hover span {
     padding-left: 10px;
 }
 

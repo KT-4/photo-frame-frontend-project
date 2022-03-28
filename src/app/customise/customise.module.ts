@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ProductRoutingModule } from './product-routing.module';
-import { WallPhotoComponent } from './wall-photo/wall-photo.component';
+import { CustomiseRoutingModule } from './customise-routing.module';
+import { AcrylicPrintComponent } from './acrylic-print/acrylic-print.component';
 import { LayoutModule } from '../layout/layout.module';
-
-
 
 @NgModule({
   declarations: [
-    WallPhotoComponent,
+    AcrylicPrintComponent
   ],
   imports: [
     CommonModule,
-    ProductRoutingModule,
+    CustomiseRoutingModule,
     LayoutModule
   ]
 })
-export class ProductModule { }
+export class CustomiseModule { }

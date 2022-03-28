@@ -3,7 +3,7 @@
     font-weight: 600;
 }
 .wallbg {
-    background: url(https://s.omgs.in/wp-content/uploads/2021/02/wall-c.jpg);
+    background: url("https://s.omgs.in/wp-content/uploads/2021/02/wall-c.jpg");
     padding: 20px;
     background-size: cover;
     margin-left: -35px;
@@ -13,6 +13,48 @@
     min-height: 338px;
     position: relative;
 }
+/* Image priveiw css start */
+.box{
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+}
+.framwidth span{
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 250px;
+  margin-top: -20px;
+  padding: 0 10px;
+  width: 115px;
+}
+#img_show{
+  background-image: url('../../../assets/images/wall-page-images/download.png');
+  background-size: 100% auto;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0/50%),
+  o 6px 20px 0 rgb(0 0 0/50%);
+  background-color: #353535;
+}
+
+
+@media only screen and (max-width:899px) {
+  #img_show {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .framwidth span{
+    margin-left: 90px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #img_show {
+    max-width: 600px;
+    max-height: 600px;
+  }  
+}
+
+/* Image priveiw css start */
 
 /* Slider Range Button CSS Start */
 /********************************/
