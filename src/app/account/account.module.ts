@@ -8,9 +8,10 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 
 import { LayoutModule } from '../layout/layout.module';
 import { SharedModule } from '../shared/shared.module';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
-  declarations: [LoginComponent, RegisterComponent, ForgotPasswordComponent],
+  declarations: [LoginComponent, RegisterComponent, ForgotPasswordComponent, ProfileComponent],
   imports: [CommonModule, AccountRoutingModule, LayoutModule, SharedModule],
 })
 export class AccountModule {}

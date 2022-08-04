@@ -1,83 +1,136 @@
 <div class="sidebar-nav">
   <nav class="navbar navbar-dark bg-white py-3">
     <div class="container-fluid">
-
       <!-- Mobile Menu Toggle Button -->
 
-      <button class="custom-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
+      <button
+        class="custom-toggler"
+        type="button"
+        *ngIf="user"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+      >
         <i class="fa-solid fa-bars me-2"></i><span>MENU</span>
       </button>
-      <a class="mx-auto justify-content-center navbar-brand text-dark" href="#"><strong class="text-danger">
-        Q-Frame
-        </strong></a>
+      <a class="mx-auto justify-content-center navbar-brand text-dark" href="#"
+        ><strong class="text-danger"> Q-Frame </strong></a
+      >
 
       <!-- Menus List -->
-      <div class="bg-light offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel">
+      <div
+        class="bg-light offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
         <div class="offcanvas-body">
           <ul class="navbar-nav">
-            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']" > <span class="item-text"> <i class="fa-solid fa-house"></i> Home</span></a></li>
-            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/product/wall-photo']" ><span class="item-text">Custom Acrylic Photo</span></a></li>
-            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Custom Phone Cases</span></a></li>
-            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/customise/acrylic-print']"> <span class="item-text">Designer acrylic</span></a></li>
+            <li *ngIf="isAdmin">
+              <a
+                data-bs-dismiss="offcanvas"
+                [routerLink]="['/admin/dashboard']"
+              >
+                <span class="item-text">
+                  <i class="fa-solid fa-user"></i> Admin</span
+                ></a
+              >
+            </li>
+            <li>
+              <a data-bs-dismiss="offcanvas" [routerLink]="['/']">
+                <span class="item-text">
+                  <i class="fa-solid fa-house"></i> Home</span
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                data-bs-dismiss="offcanvas"
+                [routerLink]="['/product/wall-photo']"
+                ><span class="item-text">Custom Acrylic Photo</span></a
+              >
+            </li>
+            <li>
+              <a data-bs-dismiss="offcanvas" [routerLink]="['/']"
+                ><span class="item-text">Custom Phone Cases</span></a
+              >
+            </li>
+            <li>
+              <a
+                data-bs-dismiss="offcanvas"
+                [routerLink]="['/customise/acrylic-print']"
+              >
+                <span class="item-text">Designer acrylic</span></a
+              >
+            </li>
             <!-- <li>
               <hr class="dropdown-divider">
             </li> -->
-            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Acrylic Name plate</span></a></li>
-            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Track Your Order</span></a></li>
-            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Blog</span></a></li>
-            <li><a data-bs-dismiss="offcanvas" [routerLink]="['/']"><span class="item-text">Contect Us</span></a></li>
+            <li>
+              <a data-bs-dismiss="offcanvas" [routerLink]="['/']"
+                ><span class="item-text">Acrylic Name plate</span></a
+              >
+            </li>
+            <li>
+              <a data-bs-dismiss="offcanvas" [routerLink]="['/']"
+                ><span class="item-text">Track Your Order</span></a
+              >
+            </li>
+            <li>
+              <a data-bs-dismiss="offcanvas" [routerLink]="['/']"
+                ><span class="item-text">Blog</span></a
+              >
+            </li>
+            <li>
+              <a data-bs-dismiss="offcanvas" [routerLink]="['/']"
+                ><span class="item-text">Contect Us</span></a
+              >
+            </li>
           </ul>
         </div>
       </div>
-
-
-
-      <div class="btn-group ">
-
-        <div id="ex4">
+      <!-- Nevbar lef side start -->
+      <div class="btn-group">
+        <div *ngIf="user" id="ex4">
           <span class="p1 fa-stack fa-2x has-badge" data-count="4">
-            <a href=""><i class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse" data-count="4b"></i></a>
+            <a href=""
+              ><i
+                class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse"
+                data-count="4b"
+              ></i
+            ></a>
           </span>
         </div>
 
-        <a href="#" class=" text-dark text-decoration-none" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          <span class="textnone"><i class=" fa-solid fa-circle-user"></i></span>
-        </a>
-
-        <ul class="bg-warning dropdown-menu  dropdown-menu-end">
-          <li><button routerLink="/login" class="dropdown-item" type="button">LogIn</button></li>
-          <li><button routerLink="/register" class="dropdown-item" type="button">Register</button></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><button class="dropdown-item" type="button">Profile</button></li>
-          <li><button class="dropdown-item" type="button">Sign out</button></li>
-        </ul>
-      </div>
-
-    </div>
-    
-
-<!-- Modal -->
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content ">
-      <div class="row">
-        <div class="col-lg-5"> 
-          <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
-          
+        <div *ngIf="!user; else userProfile" class="login_button">
+          <a routerLink="/login" class="btn btn-dark">Login</a>
         </div>
-        <div class="vl col-lg-1"></div>
-        <div class="col-lg-6" >
-          <h5 class="modal-title" id="exampleModalLabel">REGISTER</h5>
-          
-        </div>
+        <ng-template #userProfile>
+          <a
+            href="#"
+            class="text-dark text-decoration-none"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="textnone"><img [src]="user.avatar" alt="" /></span>
+          </a>
+
+          <ul class="bg-warning dropdown-menu dropdown-menu-end">
+            <li>
+              <button (click)="logout()" class="dropdown-item" type="button">
+                Logout
+              </button>
+            </li>
+
+            <li>
+              <button routerLink="profile" class="dropdown-item" type="button">
+                Profile
+              </button>
+            </li>
+          </ul>
+        </ng-template>
       </div>
-      
     </div>
-  </div>
-</div> -->
-  
+    <!-- Nevbar lef side End -->
+  </nav>
+</div>

@@ -17,7 +17,7 @@ export class AuthService {
     let userData: any = localStorage.getItem('user');
     this.userSubject = new BehaviorSubject<User>(JSON.parse(userData));
 
-    // this.user = this.userSubject.asObservable();
+    this.user = this.userSubject.asObservable();
   }
 
   public get userValue() {

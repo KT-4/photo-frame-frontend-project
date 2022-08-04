@@ -46,6 +46,10 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
+    if (this.loginForm.invalid) {
+      return;
+    }
+
     let email = this.f['email'].value;
     let password = this.f['password'].value;
 
@@ -55,12 +59,10 @@ export class LoginComponent implements OnInit {
       .subscribe({
         next: () => {
           const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
-          console.log(returnUrl);
           this.router.navigateByUrl(returnUrl);
         },
         error: (error) => {
           this.error = error;
-          console.log(error);
         },
       });
 

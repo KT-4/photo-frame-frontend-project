@@ -1,32 +1,26 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Role } from 'src/app/_models/role';
+import { AuthService } from 'src/app/_services/auth.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  user: any;
 
-  sideNav:boolean=false
-
-  close(){
-    this.sideNav = true
+  constructor(private authService: AuthService) {
+    this.authService.user.subscribe((v) => (this.user = v));
   }
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  // route(){
-  //   if (i == 0) this.router.navigate(["/"])
-  //   else if (i == 1) this.router.navigate(["/product/wall-photo"])
-  //   else if (i == 2) this.router.navigate([""])
-  //   else if (i == 3) this.router.navigate([""])
-  //   else if (i == 4) this.router.navigate([""])
-  // this.isNavOpened=false;
-  // }
-
-  ngOnInit(): void {
+  get isAdmin() {
+    return this.user && this.user.role === Role.Admin;
   }
 
- 
-
+  logout() {
+    this.authService.logout();
+  }
 }
