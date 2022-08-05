@@ -1,12 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { User } from 'src/app/_models/user';
 import { AuthService } from 'src/app/_services/auth.service';
 import { UserService } from 'src/app/_services/user.service';
 
@@ -17,7 +11,10 @@ import { UserService } from 'src/app/_services/user.service';
 })
 export class RegisterComponent implements OnInit {
   registerForm!: FormGroup;
-  error: any;
+  successMessage!: any;
+  errorMessage: any;
+  loading: boolean = false;
+
   constructor(
     private formBuilder: FormBuilder,
     private authService: AuthService,
@@ -43,15 +40,22 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit() {
+    this.loading = true;
     if (this.registerForm.invalid) {
       return;
     }
     this.userService.register(this.registerForm.value).subscribe(
       (data: any) => {
-        this.router.navigate(['/login']);
+        this.registerForm.reset();
+        this.successMessage = 'Successfully Registerd';
+        this.loading = false;
+        setTimeout(() => {
+          this.router.navigate(['/login']);
+        }, 2000);
       },
       (error: any) => {
-        this.error = error;
+        this.errorMessage = error.error.message;
+        this.loading = false;
       }
     );
     this.registerForm.reset();

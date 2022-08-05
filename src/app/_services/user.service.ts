@@ -10,8 +10,7 @@ import { User } from '../_models/user';
 export class UserService {
   constructor(private httpClient: HttpClient) {}
 
-  userSubject = new BehaviorSubject('hello');
-
+  // ------Register User-----//
   register(user: User) {
     return this.httpClient.post<User>(
       `${environment.apiUrl}/auth/register`,

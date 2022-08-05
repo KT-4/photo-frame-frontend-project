@@ -23,7 +23,7 @@ export class AuthService {
   public get userValue() {
     return this.userSubject.value;
   }
-
+  //------Login User---------//
   login(email: string, password: string) {
     return this.httpClient
       .post<any>(`${environment.apiUrl}/auth/login`, {
@@ -32,7 +32,6 @@ export class AuthService {
       })
       .pipe(
         map((user) => {
-          // store user details and jwt token in local storage to keep user logged in between page refreshes
           localStorage.setItem('user', JSON.stringify(user));
           this.userSubject.next(user);
           return user;
@@ -40,10 +39,24 @@ export class AuthService {
       );
   }
 
+  //-----logout user-----//
   logout() {
-    // remove user from localStorage
     localStorage.removeItem('user');
     this.userSubject.next(null);
     this.router.navigate(['/login']);
+  }
+  //-----Forgot Password-----//
+  forgotPassword(data: any) {
+    return this.httpClient.post<any>(
+      `${environment.apiUrl}/auth/forgot-password`,
+      data
+    );
+  }
+  //-----reset Password--------//
+  resetPassword(userId: any, token: any, data: any) {
+    return this.httpClient.post<any>(
+      `${environment.apiUrl}/auth/reset-password/${userId}/${token}`,
+      data
+    );
   }
 }

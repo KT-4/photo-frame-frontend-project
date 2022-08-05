@@ -16,7 +16,9 @@ import { AuthService } from 'src/app/_services/auth.service';
 })
 export class LoginComponent implements OnInit {
   loginForm!: FormGroup;
-  error!: any;
+  errorMessage!: any;
+  successMessage: any;
+  loading: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -46,6 +48,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
+    this.loading = true;
     if (this.loginForm.invalid) {
       return;
     }
@@ -60,9 +63,11 @@ export class LoginComponent implements OnInit {
         next: () => {
           const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
           this.router.navigateByUrl(returnUrl);
+          this.loading = false;
         },
         error: (error) => {
-          this.error = error;
+          this.errorMessage = error.error.message;
+          this.loading = false;
         },
       });
 
