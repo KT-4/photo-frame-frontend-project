@@ -10,8 +10,8 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class AuthService {
-  private userSubject!: BehaviorSubject<any>;
-  public user!: Observable<User>;
+  private userSubject: BehaviorSubject<any>;
+  public user: Observable<User>;
 
   constructor(private httpClient: HttpClient, private router: Router) {
     let userData: any = localStorage.getItem('user');

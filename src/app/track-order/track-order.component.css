@@ -1,0 +1,24 @@
+input{
+    margin-left:3px;
+    width:14rem;
+
+    height:49px;
+    text-align: center;
+    font-size:18px;
+    border:1px solid #000
+}  
+button{
+    margin-bottom:3px;
+    margin:6px;
+    width:12rem;
+    height:40px;
+    background-color: #000;
+    color:#fff;
+    font-weight:600;
+    font-size:15px;
+    
+}
+p{
+    font-size:21.4px;;
+    font-weight:bold;
+}

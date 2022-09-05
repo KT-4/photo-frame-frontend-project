@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BlogComponent } from './blog/blog.component';
+import { TrackOrderComponent } from './track-order/track-order.component';
 import { AuthGuard } from './_guards/auth.guard';
 import { Role } from './_models/role';
 
@@ -33,7 +35,8 @@ const routes: Routes = [
       import('./customise/customise.module').then((m) => m.CustomiseModule),
     canActivate: [AuthGuard],
   },
-
+  {path:'track-order',component:TrackOrderComponent},
+  {path:'blog',component:BlogComponent},
   { path: '**', redirectTo: '' },
 ];
 

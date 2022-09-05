@@ -1,0 +1,147 @@
+
+<div class="container">
+    <!-- Page Header Title -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-12 my-1">
+            <div class="text-center">
+                <h2 class="headTitle">Customised Premium Acrylic Picture</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background image wall -->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-12 my-1">
+            <div class="text">
+                <p>Easily Changeable Premium BackLift Frame</p>
+                <p>1299-4299</p>
+            </div>
+            <div class="wallbg">
+                <div class="box d-flex justify-content-center">
+                    
+                    <div class="framwidth">
+                        <span class="d-flex">12 In width</span>
+                    </div>
+                    <div id="hubble-container" width="1126" height="751">
+                        <img src="../../../assets/images/wall-page-images/download.png"  id="hubblepic" #h>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Zoom,edite and upload Section -->
+    <div class="row">
+        <div *ngIf="zoom" class="con-lg-12 col-md-12 col-12">
+            <div class="slidecontainer d-flex justify-content-center">
+                <label class="range_label me-4" for="">-</label>
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange"  (input)="deepdive()" #z>
+                <label class="range_label ms-4" for="">+</label>
+            </div>
+            <div class="text-center">
+                <p id="zoom_text">Zoom is limited to preserve quality</p>
+            </div>
+        </div>
+
+        <div *ngIf="text">
+            <div class="mb-1 slidecontainer">
+                <label for="exampleFormControlInput1" style="font-weight: 600; font-size: 12px; text-align: left;">Text on photo</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="e.g. Happy Birthday 🎂 / ❤️ Anniversery / Love">
+              </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Upload Section-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-12 mt-3 d-flex flex-column ">
+            <ul class="imgPanel">
+                <li (click)="showZoom()" class="d-flex align-items-center justify-content-center">
+                    <i class="fa fa-search-plus" aria-hidden="true"></i> zoom
+                </li>
+                <li class="text-center">
+                <label for="file-upload" class="custom-file-upload">
+                    <i class="fa fa-cloud-upload"></i> Select Photo
+                </label>
+                <input id="file-upload" type="file" accept="image/png, image/jpeg"/>
+                </li>
+                <li (click)="showText()" class="d-flex align-items-center justify-content-center">
+                    <i class="fas fa-edit"></i> Text
+                </li>
+            </ul>
+            <div style="margin:7px auto; font-size:9px;">
+                <p>By uploading an image you agree to our <strong>Terms of Service.</strong></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- create image sizing table -->
+
+    <div class="row">
+        <table class="variations d-flex justify-content-center" cellspecing="0">
+            <tbody>
+                <tr>
+                    <th>
+                        <label class="size">Size(inch)</label>
+                    </th>
+                    <td class="radio-toolbar"> 
+                        <input id="redio8X6" name="attribute_size-inch" checked type="radio" value="8x6">
+                        <label for="redio8X6">8x6</label> 
+
+                        <input id="redio12x8" name="attribute_size-inch" type="radio" value="12x8"> 
+                        <label for="redio12x8">12x8</label>                            
+                         
+                        <input id="redio12x9" name="attribute_size-inch" type="radio" value="12x9(Best Selling)">   
+                        <label for="redio12x9">12x9(Best Selling)</label> 
+                        
+                        <input id="redio11x11" name="attribute_size-inch" type="radio" value="11x11">  
+                        <label for="redio11x11">11x11</label> 
+
+                        <input id="redio16x16" name="attribute_size-inch" type="radio" value="16x16"> 
+                        <label for="redio16x16">16x16</label>
+
+                        
+                        <input id="redio18x21" name="attribute_size-inch" type="radio" value="18x21"> 
+                        <label for="redio18x21">18x21</label>
+
+
+                        <input id="redio21x15" name="attribute_size-inch" type="radio" value="21x15"> 
+                        <label for="redio21x15">21x15</label>
+                         
+                  </td>
+            </tr>
+            <tr>
+                <th>
+                    <label class="size">Size(inch)</label>
+                </th>
+                <td class="radio-toolbar"> 
+                
+                        <input id="redio3mm" name="attribute_thickness-mm" type="radio" value="12x8" checked>  
+                        <label for="redio3mm">3mm</label>
+
+                     
+                        <input id="redio8mm" name="attribute_thickness-mm" type="radio" value="8x8 PREMIUM">  
+                        <label for="redio8mm">8mm PREMIUM</label>             
+
+                     
+              </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+        <!-- End Of image sizing table -->
+
+
+    
+
+
+</div>
+

@@ -37,26 +37,38 @@
   top: 3px;
 }
 .custom-toggler {
-  background-color: white;
+  background-color: #ffffff;
   border: none;
+  background-color: black;
+  border-radius: 14px 14px 14px 14px;
+  
 }
 .custom-toggler span {
   font-size: 13px;
   vertical-align: middle;
   font-weight: 600;
-  color: #666666;
+  color:#fff;
+  font-size:14.5px;
+  text-align: center;
+  padding-right:20px;
 }
 .custom-toggler i {
   line-height: 1.2;
   font-size: 21px;
   vertical-align: middle;
-  color: #666666;
+  color:#fff;
+  font-size: 12.5px;
+  text-align: center;
+  padding: 6px;
+  width:23px;
+  
+  
 }
 
 .navbar .textnone i {
   color: #1c1f23;
   font-size: 27px;
-  padding: 7px;
+  
 }
 
 /* card icon css */
@@ -116,4 +128,9 @@
   height: 35px;
   border-radius: 50%;
   margin-top: 5px;
+}
+.text{
+  margin-top: 40px;
+  text-align: center;
+  justify-content:center;
 }

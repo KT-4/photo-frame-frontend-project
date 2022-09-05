@@ -1,5 +1,5 @@
 <!-- <app-header></app-header> -->
-<div class="container">
+ <!-- <div class="container">
     <div class="row">
         
     </div>
@@ -77,5 +77,51 @@
        </div> 
 
     </div>
-</div>
+</div> -->
 <!-- <app-footer></app-footer> -->
+<!-- 
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6">
+            <div class="card" style="width: 20rem;" *ngFor="let card of cards">
+                <img style="width:20rem" class="card-img-top" [src]="card.img" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">8 Collage Portrait Acrylic Wall Photo</h5>
+             
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container my-2">
+    <div class="row m-2">
+         <div class="col-md-4 col-lg-4 col-sm-12" *ngFor="let card of cards">
+            <div class="card" style="width:22rem;">
+                    <img class="card-img-top" [src]="card.img"   alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-title">{{card.title}}</p>  
+                </div>      
+            </div> 
+         </div>
+
+
+    </div>
+</div>
+
+
+
+         <!-- <div class="col-md-4">
+            <img src="../../../assets/images/wall-page-images/2-Photo-Collage-Acrylic-Wall-Photo-300x300.jpg" width="50" height="50"/>
+         </div>
+         <div class="col-md-4">
+            <img src="../../../assets/images/wall-page-images/2-Photo-Collage-Acrylic-Wall-Photo-300x300.jpg" width="50" height="50"/>
+         </div>
+         <div class="col-md-4">
+            <img src="../../../assets/images/wall-page-images/2-Photo-Collage-Acrylic-Wall-Photo-300x300.jpg" width="50" height="50"/>
+         </div>
+         <div class="col-md-4">
+            <img src="../../../assets/images/wall-page-images/2-Photo-Collage-Acrylic-Wall-Photo-300x300.jpg" width="50" height="50"/>
+         </div> -->
+
+

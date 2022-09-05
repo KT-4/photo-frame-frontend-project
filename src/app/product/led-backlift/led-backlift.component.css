@@ -1,0 +1,245 @@
+.headTitle{
+    padding: 10px;
+    font-weight: 600;
+}
+.wallbg {
+    background: url("https://s.omgs.in/wp-content/uploads/2021/02/wall-c.jpg");
+    padding: 20px;
+    background-size: cover;
+    margin-left: -35px;
+    margin-right: -35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 50px;
+    position: relative;
+}
+/* Image priveiw css start */
+.box{
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+}
+.framwidth span{
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 26rem;
+  margin-top: -20px;
+  padding: 0 10px;
+  width: 115px;
+  text-align: center;
+  justify-content:center;
+}
+#img_show{
+  background-image: url('../../../assets/images/wall-page-images/download.png');
+  background-size:100% auto;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0/50%),
+  o 6px 20px 0 rgb(0 0 0/50%);
+  background-color: #353535;
+  
+}
+
+
+@media only screen and (max-width:899px) {
+  #img_show {
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .framwidth span{
+    margin-left: 90px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  #img_show {
+    max-width: 600px;
+    max-height: 600px;
+  }  
+}
+
+  /* CANVAS CLASS CSS */
+.canvas{
+  background-color:#353535;
+  padding:0;
+  margin:0 auto;
+  margin-bottom:1rem;
+  display:block;
+
+}
+
+
+   /* CANVAS CLASS CSS END*/
+
+/* Image priveiw css start */
+
+/* Slider Range Button CSS Start */
+/********************************/
+
+.slidecontainer {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 350px;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 15px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    background: #0587f6;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+  .range_label{
+      width: 25px;
+      height: 25px;
+      margin: 0;
+      font-size: 20px;
+      position: relative;
+      top: -9px;  
+  }
+  #zoom_text{
+      font-size: 11px;
+      text-align: center;
+      font-weight: 300px;
+
+  }
+  #hubblepic{
+       margin-top:20px;
+       text-align: center;
+       justify-content: center;
+       position:relative;
+       width:60%;
+       overflow: hidden;
+  }
+
+  /* Slider Range Button CSS End */
+/*********************************/
+
+
+
+/*image edit saction css*/
+/************************/
+.imgPanel{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;  
+}
+.imgPanel li {
+  list-style: none;
+  float: left;
+  margin-left: 0 !important;
+  width: 33.33%;
+  height: 60px;
+  border: 1px solid #eee;
+  vertical-align: middle;
+  cursor: pointer;
+  
+}
+.imgPanel li:hover{
+  background-color: #eeeeee;
+}
+
+/*image edit saction css*/
+/************************/
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ea8b00;
+  background-color: #ea8b00;
+  border-radius: 5px;
+  display:block;
+  margin: 10px 8px;
+  padding: 9px 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+#myRange{
+   justify-content: center;
+
+}
+.text p{
+  margin-top: 5rem;
+  font-weight: bold;
+  font-size: 29px;
+  text-align: center;
+  justify-content:center;
+}
+
+
+
+
+
+/* start Image resizeing css */
+/************************/
+
+table.variations {
+  max-width: 480px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.variations .size {
+  vertical-align: middle;
+  padding: 0.2em 1em;
+  border: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.radio-toolbar input[type="radio"] {
+  /* display: none; */
+  opacity: 0;
+  position: fixed;
+  width: 0;
+  
+}
+
+.radio-toolbar label {
+  display: inline-block;
+  border: 1px solid #b7b3b3;
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.radio-toolbar input[type="radio"]:checked  + label{
+  background-color: black !important;
+  font-weight: bold !important;
+  color: white !important;
+  border: 2px solid black !important;
+}
+
+
+/* End image resize css */
+/**********************/

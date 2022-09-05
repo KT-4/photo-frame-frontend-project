@@ -10,7 +10,7 @@
     margin-right: -35px;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 338px;
+    min-height: 50px;
     position: relative;
 }
 /* Image priveiw css start */
@@ -24,17 +24,20 @@
   background-color: #000;
   color: #fff;
   font-size: 12px;
-  margin-left: 250px;
+  margin-left: 26rem;
   margin-top: -20px;
   padding: 0 10px;
   width: 115px;
+  text-align: center;
+  justify-content:center;
 }
 #img_show{
   background-image: url('../../../assets/images/wall-page-images/download.png');
-  background-size: 100% auto;
+  background-size:100% auto;
   box-shadow: 0 4px 8px 0 rgb(0 0 0/50%),
   o 6px 20px 0 rgb(0 0 0/50%);
   background-color: #353535;
+  
 }
 
 
@@ -53,6 +56,19 @@
     max-height: 600px;
   }  
 }
+
+  /* CANVAS CLASS CSS */
+.canvas{
+  background-color:#353535;
+  padding:0;
+  margin:0 auto;
+  margin-bottom:1rem;
+  display:block;
+
+}
+
+
+   /* CANVAS CLASS CSS END*/
 
 /* Image priveiw css start */
 
@@ -112,6 +128,15 @@
       font-size: 11px;
       text-align: center;
       font-weight: 300px;
+
+  }
+  #hubblepic{
+       margin-top:20px;
+       text-align: center;
+       justify-content: center;
+       position:relative;
+       width:60%;
+       overflow: hidden;
   }
 
   /* Slider Range Button CSS End */
@@ -158,6 +183,10 @@ input[type="file"] {
   color: white;
   font-size: 13px;
   font-weight: bold;
+}
+#myRange{
+   justify-content: center;
+
 }
 
 

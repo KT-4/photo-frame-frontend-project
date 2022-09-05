@@ -49,9 +49,8 @@ export class RegisterComponent implements OnInit {
         this.registerForm.reset();
         this.successMessage = 'Successfully Registerd';
         this.loading = false;
-        setTimeout(() => {
-          this.router.navigate(['/login']);
-        }, 2000);
+        this.router.navigate(['/login']);
+        
       },
       (error: any) => {
         this.errorMessage = error.error.message;

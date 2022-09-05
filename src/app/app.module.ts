@@ -8,9 +8,12 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
 import { SharedModule } from './shared/shared.module';
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
+import { TrackOrderComponent } from './track-order/track-order.component';
+import { BlogComponent } from './blog/blog.component';
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TrackOrderComponent, BlogComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

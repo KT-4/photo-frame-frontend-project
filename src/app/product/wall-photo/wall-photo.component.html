@@ -15,11 +15,11 @@
             <div class="wallbg">
                 <div class="box d-flex justify-content-center">
                     <div class="framwidth">
-                        <span>12 In width</span>
+                        <span class="d-flex">12 In width</span>
                     </div>
-                    <canvas width="1126" height="751" id="img_show" psize="12x8">
-    
-                    </canvas>
+                    <div id="hubble-container" width="1126" height="751">
+                        <img src="../../../assets/images/wall-page-images/download.png"  id="hubblepic" #h>
+                    </div>
                     
                 </div>
             </div>
@@ -31,7 +31,7 @@
         <div *ngIf="zoom" class="con-lg-12 col-md-12 col-12">
             <div class="slidecontainer d-flex justify-content-center">
                 <label class="range_label me-4" for="">-</label>
-                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                <input type="range" min="1" max="100" value="50" class="slider" id="myRange"  (input)="deepdive()" #z>
                 <label class="range_label ms-4" for="">+</label>
             </div>
             <div class="text-center">

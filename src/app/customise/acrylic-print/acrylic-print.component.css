@@ -1,31 +1,26 @@
+.container row{
+    display:flex;
+    margin:12px;
+    top:10px;
+     
+}
+
 .card{
-    border-radius: 0%;
-    margin-bottom: 20px;
-    cursor: pointer;
-    overflow: hidden; 
+   text-align: center;
+   margin:2px;
+   display:flex;
+   max-width:350px;
+   position: relative;
+
+}
+.card-title{
+   padding:4px;
+   text-align:center;
+   height:10px;
+  
+}
+p{
+   font-weight:700;
+   font-size:14px;
 }
 
-.card img{
- height: 350px;
- transition: 1.3s ease-in-out !important;
-}
-
-.card-body{
-    text-align: center;
-    padding: 10px;
-    background-color: #f7f7f7;
-}
-
-.card-title {
-text-transform: capitalize;
-font-weight: bold;
-font-size: 16px;
-}
-
-@media (max-width: 800px){
-    .mx-30{
-        margin-bottom: 20px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-}

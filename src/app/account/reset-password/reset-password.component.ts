@@ -41,8 +41,11 @@ export class ResetPasswordComponent implements OnInit {
 
   onSubmit() {
     this.loading = true;
+    
     let formdata = this.resetForm.value;
     this.Validate(formdata);
+
+
     let userId = this.route.snapshot.paramMap.get('id');
     let token = this.route.snapshot.paramMap.get('token');
 
@@ -54,11 +57,11 @@ export class ResetPasswordComponent implements OnInit {
         setTimeout(() => {
           this.successMessage = null;
           this.router.navigate(['/login']);
-        }, 2000);
+        }, 1000);
       },
-      (e) => {
-        if (e.error.message) {
-          this.errorMessage = e.error.message;
+      (err) => {
+        if (err.error.message) {
+          this.errorMessage = err.error.message;
           this.loading = false;
         }
       }
