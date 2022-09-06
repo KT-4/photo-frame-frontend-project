@@ -12,6 +12,8 @@ export class WallPhotoComponent implements OnInit {
 
   @ViewChild('h')h!:ElementRef;
   @ViewChild('z')z!:ElementRef;
+
+  // @ViewChild('fileInput')
   constructor() { }
 
   ngOnInit(): void {
