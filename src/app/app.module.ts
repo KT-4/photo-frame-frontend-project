@@ -10,10 +10,11 @@ import { SharedModule } from './shared/shared.module';
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { TrackOrderComponent } from './track-order/track-order.component';
 import { BlogComponent } from './blog/blog.component';
+import { GallaryComponent } from './gallary/gallary.component';
 
 
 @NgModule({
-  declarations: [AppComponent, TrackOrderComponent, BlogComponent],
+  declarations: [AppComponent, TrackOrderComponent, BlogComponent, GallaryComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

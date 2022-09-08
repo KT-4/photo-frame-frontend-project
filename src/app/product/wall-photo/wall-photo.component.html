@@ -61,7 +61,7 @@
                 <label for="file-upload" class="custom-file-upload">
                     <i class="fa fa-cloud-upload"></i> Select Photo
                 </label>
-                <input id="file-upload" type="file" accept="image/png, image/jpeg"/>
+                <input id="file-upload" type="file" onchange="onfileSelected($event)" #fileinput>
                 </li>
                 <li (click)="showText()" class="d-flex align-items-center justify-content-center">
                     <i class="fas fa-edit"></i> Text

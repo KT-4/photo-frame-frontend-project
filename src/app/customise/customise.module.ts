@@ -7,12 +7,14 @@ import { LayoutModule } from '../layout/layout.module';
 import { AcrylincWallPhotoDesignComponent } from './acrylinc-wall-photo-design/acrylinc-wall-photo-design.component';
 import { BestAcrylicPhotoComponent } from './best-acrylic-photo/best-acrylic-photo.component';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { DesignAcrylicNamePlateComponent } from './design-acrylic-name-plate/design-acrylic-name-plate.component';
 
 @NgModule({
   declarations: [
     AcrylicPrintComponent,
     AcrylincWallPhotoDesignComponent,
-    BestAcrylicPhotoComponent
+    BestAcrylicPhotoComponent,
+    DesignAcrylicNamePlateComponent
   ],
   imports: [
     CommonModule,
